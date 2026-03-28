@@ -81,7 +81,6 @@ npm run dev
 
 ## 📌 Future Improvements
 
-* Online payment integration
 * Admin dashboard
 * Database integration
 * User authentication system
