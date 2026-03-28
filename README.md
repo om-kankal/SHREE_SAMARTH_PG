@@ -1,20 +1,103 @@
-<<<<<<< HEAD
+# 🏠 SHREE SAMARTH PG - Hostel Website
 
-=======
-# React + Vite
+A modern and responsive hostel/PG booking website built using **HTML, CSS, JavaScript, React**, and a small **Python backend**.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🛏️ Room listings and details
+* 📅 Booking interface
+* 📸 Gallery of hostel facilities
+* 📞 Contact and inquiry form
+* 🔐 Basic authentication (login page)
+* 🌙 Light/Dark theme toggle
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **Frontend:** HTML, CSS, JavaScript, React
+* **Backend:** Python (basic API handling)
+* **Build Tool:** Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> c093518 (Initial commit)
+---
+
+## 📂 Project Structure
+
+```
+project-root/
+│── public/          # Static assets
+│── src/             # React components & pages
+│── components/      # Reusable UI components
+│── pages/           # Website pages
+│── assets/          # Images & icons
+│── package.json     # Dependencies
+│── vite.config.js   # Build configuration
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/your-repo.git
+```
+
+2. Navigate to the project folder:
+
+```
+cd your-repo
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Run the development server:
+
+```
+npm run dev
+```
+
+---
+
+## 🐍 Backend (Python)
+
+* Handles basic backend logic (e.g., booking or form submission)
+* Can be extended with frameworks like Flask or Django
+
+---
+
+## 📸 Screenshots
+
+*Add screenshots of your website here*
+
+---
+
+## 📌 Future Improvements
+
+* Online payment integration
+* Admin dashboard
+* Database integration
+* User authentication system
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Om Kankal**
+not completed yet
+
+
+
+
+
+
+
+
+
