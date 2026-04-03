@@ -1,21 +1,21 @@
-# 🏠 SHREE SAMARTH PG - Hostel Website
+#  SHREE SAMARTH PG - Hostel Website
 
 A modern and responsive hostel/PG booking website built using **HTML, CSS, JavaScript, React**, and a small **Python backend**.
 
 ---
 
-## 🚀 Features
+##  Features
 
-* 🛏️ Room listings and details
-* 📅 Booking interface
-* 📸 Gallery of hostel facilities
-* 📞 Contact and inquiry form
-* 🔐 Basic authentication (login page)
-* 🌙 Light/Dark theme toggle
+*  Room listings and details
+*  Booking interface
+*  Gallery of hostel facilities
+*  Contact and inquiry form
+*  Basic authentication (login page)
+* Light/Dark theme toggle
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:** HTML, CSS, JavaScript, React
 * **Backend:** Python (basic API handling)
@@ -23,7 +23,7 @@ A modern and responsive hostel/PG booking website built using **HTML, CSS, JavaS
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 project-root/
@@ -38,7 +38,7 @@ project-root/
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 1. Clone the repository:
 
@@ -66,20 +66,14 @@ npm run dev
 
 ---
 
-## 🐍 Backend (Python)
+## Backend (Python)
 
 * Handles basic backend logic (e.g., booking or form submission)
 * Can be extended with frameworks like Flask or Django
 
 ---
 
-## 📸 Screenshots
-
-*Add screenshots of your website here*
-
----
-
-## 📌 Future Improvements
+##  Future Improvements
 
 * Admin dashboard
 * Database integration
@@ -87,7 +81,7 @@ npm run dev
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Developed by **Om Kankal**
 not completed yet
