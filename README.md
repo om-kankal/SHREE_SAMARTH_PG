@@ -66,13 +66,4 @@ npm run dev
 ---
 ##  Author
 Developed by **Om Kankal** <br>
-not completed yet
-
-
-
-
-
-
-
-
-
+project is not completed yet
