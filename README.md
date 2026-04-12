@@ -84,9 +84,7 @@ npm run dev
 - **Username**: admin
 - **Password**: admin123
 
-
 ```
-
 ## API Endpoints
 
 ### Authentication
@@ -114,17 +112,13 @@ npm run dev          # Start development server
 npm run build        # Build for production
 npm run preview      # Preview production build
 ```
-
 ### Backend Development
 ```bash
 cd server
 python app.py        # Start Flask development server
 ```
-
 ## Troubleshooting
-
 ### Common Issues
-
 1. **Port already in use**: Change ports in `vite.config.js` or `server/app.py`
 2. **Database connection failed**: Check MySQL credentials in `server/.env`
 3. **Python not found**: Use `py` instead of `python` on Windows
@@ -141,7 +135,6 @@ python app.py        # Start Flask development server
 - Alternative: Use `py server/app.py` directly to start backend
 
 ## Contributing
-
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
