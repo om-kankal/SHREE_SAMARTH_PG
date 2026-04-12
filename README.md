@@ -84,20 +84,7 @@ npm run dev
 - **Username**: admin
 - **Password**: admin123
 
-## Project Structure
 
-```
-├── src/                    # Frontend React app
-│   ├── components/         # Reusable components
-│   ├── pages/             # Page components
-│   └── assets/            # Static assets
-├── server/                # Backend Flask app
-│   ├── app.py            # Main Flask application
-│   ├── routes.py         # API routes
-│   ├── db.py             # Database connection
-│   └── requirements.txt  # Python dependencies
-├── database.sql           # Database schema and seed data
-└── package.json          # Frontend dependencies and scripts
 ```
 
 ## API Endpoints
@@ -160,7 +147,3 @@ python app.py        # Start Flask development server
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## License
-
-This project is for educational purposes.
