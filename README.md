@@ -1,69 +1,166 @@
-#  SHREE SAMARTH PG - Hostel Website
+# Shree Samarth PG Management System
 
-A modern and responsive hostel/PG booking website built using **HTML, CSS, JavaScript, React**, and a small **Python backend**.
+A complete web application for managing Paying Guest (PG) accommodations with student booking, room management, payment tracking, and admin dashboard.
 
----
-##  Features
+## Features
 
-*  Room listings and details
-*  Booking interface
-*  Gallery of hostel facilities
-*  Contact and inquiry form
-*  Basic authentication (login page)
-*  Light/Dark theme toggle
+### Student Features
+- User registration and login
+- Room browsing and booking
+- Payment tracking
+- Inquiry submission
 
----
-##  Tech Stack
+### Admin Features
+- Dashboard with analytics
+- Room and bed management (max 5 beds per room)
+- Booking management with bed assignment
+- Payment tracking and updates
+- Inquiry management
+- SMS notification system
 
-* **Frontend: ** HTML, CSS, JavaScript, React
-* **Backend: ** Python (basic API handling)
-* **Build Tool: ** Vite
+## Tech Stack
 
----
-##  Project Structure
+- **Frontend**: React 19 + Vite
+- **Backend**: Flask (Python)
+- **Database**: MySQL
+- **Styling**: CSS with custom design system
 
-```
-project-root/
-│── public/          # Static assets
-│── src/             # React components & pages
-│── components/      # Reusable UI components
-│── pages/           # Website pages
-│── assets/          # Images & icons
-│── package.json     # Dependencies
-│── vite.config.js   # Build configuration
-```
+## Prerequisites
 
-## Installation & Setup
+- Python 3.8+
+- Node.js 16+
+- MySQL Server
+- Git
 
-1. Clone the repository:
-```
-git clone https://github.com/your-username/your-repo.git
-```
-2. Navigate to the project folder:
-```
-cd your-repo
-```
-3. Install dependencies:
-```
+## Setup Instructions
+
+### 1. Clone and Install Dependencies
+
+```bash
+git clone <repository-url>
+cd shree_samarth_pg_update3
+
+# Install frontend dependencies
 npm install
+
+# Install backend dependencies
+pip install -r server/requirements.txt
 ```
-4. Run the development server:
+
+### 2. Database Setup
+
+1. Start MySQL server
+2. Create database: `sspg`
+3. Update `server/.env` with your MySQL credentials
+4. Run the database setup:
+```bash
+mysql -u root -p sspg < database.sql
 ```
+
+### 3. Start the Application
+
+#### Option 1: Using the start script (Recommended)
+```bash
+npm start
+```
+This will start both frontend and backend servers automatically.
+
+#### Option 2: Manual startup
+```bash
+# Terminal 1: Start backend
+npm run backend
+
+# Terminal 2: Start frontend
 npm run dev
 ```
 
-## Backend (Python)
+### 4. Access the Application
 
-* Handles basic backend logic (e.g., booking or form submission)
-* Can be extended with frameworks like Flask or Django
+- **Frontend**: http://localhost:5174
+- **Backend API**: http://127.0.0.1:5000
 
----
-##  Future Improvements
-* Admin dashboard
-* Database integration
-* User authentication system
+## Default Admin Credentials
 
----
-##  Author
-Developed by **Om Kankal** <br>
-project is not completed yet
+- **Username**: admin
+- **Password**: admin123
+
+## Project Structure
+
+```
+├── src/                    # Frontend React app
+│   ├── components/         # Reusable components
+│   ├── pages/             # Page components
+│   └── assets/            # Static assets
+├── server/                # Backend Flask app
+│   ├── app.py            # Main Flask application
+│   ├── routes.py         # API routes
+│   ├── db.py             # Database connection
+│   └── requirements.txt  # Python dependencies
+├── database.sql           # Database schema and seed data
+└── package.json          # Frontend dependencies and scripts
+```
+
+## API Endpoints
+
+### Authentication
+- `POST /api/register/student` - Student registration
+- `POST /api/login/student` - Student login
+- `POST /api/login/admin` - Admin login
+
+### Student
+- `GET /api/rooms` - Get available rooms
+- `POST /api/booking` - Create booking
+- `POST /api/inquiries` - Submit inquiry
+
+### Admin
+- `GET /api/admin/dashboard` - Dashboard summary
+- `GET /api/admin/rooms` - Room management
+- `GET /api/admin/bookings` - Booking management
+- `GET /api/admin/payments` - Payment management
+- `GET /api/admin/inquiries` - Inquiry management
+
+## Development
+
+### Frontend Development
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+```
+
+### Backend Development
+```bash
+cd server
+python app.py        # Start Flask development server
+```
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Port already in use**: Change ports in `vite.config.js` or `server/app.py`
+2. **Database connection failed**: Check MySQL credentials in `server/.env`
+3. **Python not found**: Use `py` instead of `python` on Windows
+4. **CORS errors**: Ensure both servers are running on correct ports
+
+### Database Issues
+- Ensure MySQL is running
+- Check database name matches in `.env`
+- Run `database.sql` to initialize schema
+
+### Windows-Specific Issues
+- If `python` command is not found, the scripts automatically use `py` (Python launcher)
+- Make sure Python is installed and added to PATH
+- Alternative: Use `py server/app.py` directly to start backend
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is for educational purposes.
